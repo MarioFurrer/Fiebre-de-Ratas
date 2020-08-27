@@ -11,7 +11,7 @@ class UNRaf extends Phaser.Scene{
         this.load.image("Logo", "assets/logoJuego.png");
         this.load.image("Fondo", "assets/fondoMenu.png");
 
-        this.load.audio("musicaMenu", "assets/audio/Musica_Menu_principal.wav");
+        this.load.audio("musicaMenu", "assets/audio/MusicaMenuPrincipal.wav");
         this.load.audio("sonidoBoton", "assets/audio/boton.wav");
 
         //Informacion
@@ -50,16 +50,16 @@ class UNRaf extends Phaser.Scene{
         this.load.image("HogarVida9", "assets/8vidas.png");
         this.load.image("HogarVida10", "assets/9vidas.png");
 
-        this.load.audio("musicaIngame", "assets/audio/Musica_Ingame.wav");
+        this.load.audio("musicaIngame", "assets/audio/MusicaIngame.wav");
         this.load.audio("sonidoTrigo", "assets/audio/Cosechar.wav");
-        this.load.audio("ubicarGato", "assets/audio/Gato_Ubicar.wav");
-        this.load.audio("ataqueGato", "assets/audio/Gato_Ataque.wav");
+        this.load.audio("ubicarGato", "assets/audio/GatoUbicar.wav");
+        this.load.audio("ataqueGato", "assets/audio/GatoAtaque.wav");
 
         //Pausa
         this.load.image('fondoOscurecido', 'assets/fondoOscurecido.png');
 
         //Victoria
-        this.load.audio("musicaVictoria", "assets/audio/Musica_Victoria.wav");
+        this.load.audio("musicaVictoria", "assets/audio/MusicaVictoria.wav");
 
         //Derrota
     }

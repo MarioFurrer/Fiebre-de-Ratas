@@ -411,13 +411,14 @@ class Juego extends Phaser.Scene{
     }
 
     //////////////////////RESOLVER////////////////////////////////RESOLVER///////////////////////
-    ataqueGato(Gato, Ratas){
-        if(Rata.x <= 700){
-            if(Gato.pos == 1 && Rata.y == 400){
-                this.Rata.vida = vida - 1;
+    ataqueGato(){
+        this.Ratas.children.each(function(Rata) {
+            if(Rata.x <= 700){
+                if(this.Gato.pos == 1 && Rata.y == 400){
+                    Ratas.vida = vida - 1;
+                }
             }
-        }
-        
+        })
     }
 
     victory(){
