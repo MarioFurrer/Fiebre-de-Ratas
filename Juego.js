@@ -113,13 +113,16 @@ class Juego extends Phaser.Scene{
             var carril = Phaser.Math.FloatBetween(0, 1);
             if (carril <= 0.33){
                 RataY = 400;
+                Rata.carril = 1
             }
             else {
                 if (carril <= 0.66){
                     RataY = 522;
+                    Rata.carril = 2
                 }
                 else {
                     RataY = 644;
+                    Rata.carril = 3
                 }
             }
 
@@ -410,13 +413,10 @@ class Juego extends Phaser.Scene{
         tiempoCosecha = 100;
     }
 
-    //////////////////////RESOLVER////////////////////////////////RESOLVER///////////////////////
-    ataqueGato(){
+    ataqueGato(carril){
         this.Ratas.children.each(function(Rata) {
-            if(Rata.x <= 700){
-                if(this.Gato.pos == 1 && Rata.y == 400){
-                    Ratas.vida = vida - 1;
-                }
+            if(Rata.carril = carril){                
+                Ratas.vida = vida - 1;
             }
         })
     }
